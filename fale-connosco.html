@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>psido</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/form.css"/>
+    </head>
+    
+
+    
+    <body>
+        <img src="c:\Users\patri\OneDrive\Área de Trabalho\curso iefp-comercio digital\ufcd 6 - 9221 Gestão de mobile\Trabalhos\IOT\IOT\imagens\logo.png" width=200><H1 align="center">Personalização de Encomenda</H1>
+   
+             <form method="post" id="fcontato" action="mailto:contacto@gmail.com">
+                 <fieldset id="user"><legend> Identificação do Utilizador</legend>
+                     <p><label for="cNome">Nome:<input type="text" name="tNome" id="cNome"/></label></p>
+                     <p><label for="cPassword">PassWord:<input type="password" name="tPassword" id="cPassword" size="8" maxlength="8" placeholder="8 digitos"/></label></p>
+                     <P><label for="cEmail">E-mail:<input type="email" name="tEmail" id="cEmail" size="20" maxlength="40"></label></p>
+                     <fieldset id="sexo"><legend>Sexo:</legend>
+                         <label for="cMasc"><input type="radio" name="tSexo" id="cMasc">Masculino</label><br>
+                         <label for="cFen"><input type="radio" name="tSexo" id="cFem">Feminino</label><br>
+        </fieldset>
+                     <p><label for=cNasc>Data de Nascimento:<input type="date" name="tNasc" id="cNasc"/></label></p>
+                 </fieldset>
+        
+        
+                 <fieldset id="endereco"><legend>Endereço de entrega:</legend>
+                     <p><label for="cRua">Rua:<input type="text" name="tRua" id="cRua" size="13" maxlength="100" placeholder="Rua, Av., Trav, ..."/></label></p>
+                     <p><label for="cNum">Número:<input type="number" name="tNum" id="cNum" min="0" max="9999"/></label></p>
+                     <p><label for="cLoc">Localidade: <input type="text" name="tLoc" id="cLoc" size="13" maxlength="80" placeholder="Localidade"></p>
+                             <p>Código postal:
+                                 <select name="tCod" id="cCod">
+                                     <option>6000-246 Castelo Branco</option>
+                                     <option>6200-054 Covilhã</option>
+                                 </select></p>
+                 </fieldset>
+        
+        
+                 <fieldset id="mensagem"><legend>Mensagens do utilizador:</legend>
+        <p>Grau de urgência:
+            <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/></p>
+        <p>Mensagem:</p>
+            <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Escreva aqui as informações para Personalização "></textarea>
+                 </fieldset>
+        
+                 <fieldset id="pedido"><legend>News Letter:</legend>
+                     <p><input type="checkbox" name="tPed" id="cPed" checked="true">Quero receber as novidades</p>
+                     <p>Data:<input type="date" name="tData" id="cData"/></p>
+                 </fieldset>
+        
+                 <input type="submit" value="Enviar"/>
+      
+             </form>     
+  
+
+            
+    </body>
+</html>
